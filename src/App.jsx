@@ -11,7 +11,7 @@ function App() {
     <>
       <h1>{data.title}</h1>
       <h3>{data.introduction}</h3>
-      <div class="card">
+      <article class="card">
         <button
           onClick={() => setDeveloper((d) => !d)}
           aria-expanded={developer()}
@@ -19,7 +19,7 @@ function App() {
           Alex as a developer
         </button>
 
-        <div
+        <section
           class="dropdown"
           classList={{ open: developer() }}
           aria-hidden={!developer()}
@@ -32,8 +32,8 @@ function App() {
               <li>{item}</li>
             ))}
           </ul>
-        </div>
-      </div>
+        </section>
+      </article>
       <p class="read-the-docs">
         Click on the socials logos to learn more
       </p>
