@@ -9,42 +9,44 @@ function App() {
 
   return (
     <>
-      <h1>{data.title}</h1>
-      <h3>{data.introduction}</h3>
-      <article class="card">
-        <button
-          onClick={() => setDeveloper((d) => !d)}
-          aria-expanded={developer()}
-        >
-          Alex as a developer
-        </button>
+      <header class="page-header"><b>Alex Bierhance</b></header>
+      <article id="main">
+        <h1>{data.title}</h1>
+        <h3>{data.introduction}</h3>
+        <article class="card">
+          <button
+            onClick={() => setDeveloper((d) => !d)}
+            aria-expanded={developer()}
+          >
+            Alex as a developer
+          </button>
 
-        <section
-          class="dropdown"
-          classList={{ open: developer() }}
-          aria-hidden={!developer()}
-        >
-          <p>
-            <b>I have:</b>
-          </p>
-          <ul>
-            {data.skills.map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        </section>
+          <section
+            class="dropdown"
+            classList={{ open: developer() }}
+            aria-hidden={!developer()}
+          >
+            <p>
+              <b>I have:</b>
+            </p>
+            <ul>
+              {data.skills.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </section>
+        </article>
+        <p class="read-the-docs">Click on the socials logos to learn more</p>
+        <div>
+          <a href="https://vite.dev" target="_blank">
+            <img src={viteLogo} class="logo" alt="Vite logo" />
+          </a>
+          <a href="https://solidjs.com" target="_blank">
+            <img src={solidLogo} class="logo" alt="Solid logo" />
+          </a>
+        </div>
       </article>
-      <p class="read-the-docs">
-        Click on the socials logos to learn more
-      </p>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} class="logo" alt="Vite logo" />
-        </a>
-        <a href="https://solidjs.com" target="_blank">
-          <img src={solidLogo} class="logo" alt="Solid logo" />
-        </a>
-      </div>
+      
     </>
   );
 }
