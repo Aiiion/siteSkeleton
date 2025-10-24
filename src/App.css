@@ -27,6 +27,24 @@
 }
 
 .dropdown {
-  max-height: 0px;
-  transition: max-height 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: max-height 300ms ease, opacity 200ms ease, transform 300ms ease;
+  pointer-events: none;
+}
+
+.dropdown.open {
+  max-height: 400px; 
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+li {
+  text-decoration: none;
+}
+.dropdown ul {
+  margin: 0;
+  padding-left: 1rem;
 }
