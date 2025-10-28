@@ -31,7 +31,7 @@
   border: none;
 }
 .card {
-  padding: 2em 0em;
+  padding: 1em 0em;
 }
 
 .sub-text {
@@ -41,7 +41,7 @@
   color: #bababa;
 }
 .project {
-  display:inline-flex;
+  display: inline-flex;
   justify-content: center;
   flex-direction: column;
 }
@@ -76,16 +76,18 @@
   text-decoration: underline;
 }
 .top {
-  position:absolute;
-  top:0;
+  position: absolute;
+  top: 0;
 }
-.rotate{
+.rotate {
   transform: rotate(180deg);
 }
 .rotate-transition {
   animation-name: rotate-animation;
-  animation-duration: 0.3s; 
-  animation-timing-function: ease-in-out; 
-  animation-iteration-count: 1; 
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
 }
-
+h3.slim {
+  font-weight: 600;
+}
