@@ -1,11 +1,15 @@
 {
     "title": "I am Alex",
     "introduction": "A backend oritented fullstack developer with a passion for creating scalable solutions.",
+    "skillsBtn": "Alex as a developer",
     "skills": [
-        "A broad technical interest and expiernce across all stacks",
+        "A broad technical interest and experience across many stacks.",
         "Expertice in modern Laravel development building RESTful APIs and fullstack apps.",
         "Experience with DevOps on both managed and unmanaged VPS.", 
         "Experience with React / React native development."
-    ]
+    ],
+    "email": "alex@bierhance.se",
+    "github": "https://github.com/Aiiion",
+    "linkedIn": "www.linkedin.com/in/alex-bierhance-50649b129"
 
 }
