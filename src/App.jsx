@@ -117,21 +117,21 @@ function App() {
         <footer class="pt-1">
           <p class="sub-text">Check out my socials or email me to learn more</p>
           <Show when={data.github}>
-            <a href="https://github.com/Aiiion" target="_blank">
+            <a href={data.github} target="_blank">
               <img
                 src={darkTheme() ? ghLogoWhite : ghLogo}
                 class="logo small"
-                alt="github logo"
+                alt="Github logo"
               />
             </a>
           </Show>
 
           <Show when={data.linkedIn}>
-            <a href="https://github.com/Aiiion" target="_blank">
+            <a href={data.linkedIn} target="_blank">
               <img
                 src={darkTheme() ? liLogoWhite : liLogo}
                 class="logo small"
-                alt="github logo"
+                alt="LinkedIn logo"
               />
             </a>
           </Show>
